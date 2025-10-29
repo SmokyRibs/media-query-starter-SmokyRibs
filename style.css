@@ -18,6 +18,19 @@ html {
   }
   
   /* CODE ALONG: Write a media query to change the styling on screens that have a min-width of 768px that changes the grid to three columns and changes the color of the border*/
+   @media (min-width:670px) {
+    .container {
+       display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 7fr);
+    }
+    .box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 3fr);
+      border-color: aquamarine;
+    }
+  }
   
   
   /* INDEPENDENT PRACTICE: Write a media query to change the styling on screens that have a min-width of 390 that changes the grid to two columns, reduces the box height to 100px, reduces padding to 5px, and reduces the border weight to 1px */
